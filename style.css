@@ -1,0 +1,15 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#div1 {
+    background-color: aqua;
+	min-width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+#video {
+	min-width: 100%;
+}
