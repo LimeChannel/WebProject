@@ -132,3 +132,8 @@
 	left: 0px;
 	top: 0px;
 }
+
+#Tariffs {
+	height: 100vh;
+	background-color: aquamarine;
+}
