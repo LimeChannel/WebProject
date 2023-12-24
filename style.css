@@ -137,3 +137,46 @@
 	height: 100vh;
 	background-color: aquamarine;
 }
+
+#competency div, #competency h1, #competency h2, #competency h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    line-height: 1.2;}
+#competency h1{
+    color: black;
+    font-size: 2vw;
+    font-weight:700;}
+#competency h3{
+    font-size: 1.2vw;
+    font-weight: 70;}
+#competency h2{
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+#competency text{
+    font-size: 0.9vw;
+    font-weight: 70;
+}
+#competency .main{
+    width: 75%; height: auto;
+    margin: 0 auto;
+    padding: 30px;}
+#competency .main .title{
+    margin-left: 10px;
+    width: 50%;}
+.item{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;}
+.item img{
+    width: 50%;
+    margin-bottom: 15px;}
+#items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;}
+#items .item{
+    background-color: white;
+    width: 16%;
+    margin: 4%;}
