@@ -285,3 +285,37 @@
     bottom: 0;
     z-index: 0;
 }
+#developers .title{
+    width: 70%;
+}
+.person img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#persons{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+#persons .person{
+    background-color: white;
+    width: 20%;
+    margin: 6%;
+}
+#team .title{
+    margin: 0 auto;
+}
+#team .title h1{
+    text-align: center;
+}
+#team-button{
+    text-align: center;
+}
+#team a{
+    border: solid gray 1px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 auto;
+    color: black;
+}
