@@ -319,3 +319,51 @@
     margin: 0 auto;
     color: black;
 }
+
+#reviews .main .title{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#reviews .main .title h2{
+    text-align: center;
+}
+#reviews .body{
+    display: flex;
+    width: 75%;
+    box-shadow: 0 0 10px 1px gray;
+    margin: 0 auto;
+    padding: 50px;
+    padding-right: 0px;
+}
+#reviews .body .number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    border-left: solid gray 2px;
+}
+#reviews .body .number div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#reviews .body .number text{
+    text-align: center;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 67%;
+    margin: 0 50px;
+}
+.review img, .review text{
+    display: block;
+    margin: 20px 0;
+}
+.review img{
+    width: 10%;
+}
+.review .message{
+    font-weight: 600;
+}
