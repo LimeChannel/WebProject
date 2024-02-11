@@ -141,38 +141,37 @@
 .topic div, .topic h1, .topic h2, .topic h3, .topic text {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 .topic h1{
     color: black;
-    font-size: 2vw;
+    font-size: 5vw;
     font-weight:700;
 }
 .topic h3{
-    font-size: 1.2vw;
+    font-size: 4vw;
     font-weight: 70;
 }
 .topic h2{
-    font-size: 1.2vw;
+    font-size: 4vw;
     font-weight: 700;
 }
 .topic text{
-    font-size: 0.9vw;
+    font-size: 4vw;
     font-weight: 70;
 }
 .main{
-    width: 75%; height: auto;
+    width: 100vw; height: auto;
     margin: 0 auto;
-    padding: 30px;
+    padding: 10px;
 }
 #competency .main{
-    width: 75%; height: auto;
+    width: 100%; height: auto;
     margin: 0 auto;
     padding: 30px;
 }
 #competency .main .title{
-    margin-left: 10px;
-    width: 50%;
+    width: 100%;
 }
 .item{
     background-color: aqua;
@@ -180,35 +179,41 @@
     flex-direction: column;
 }
 .item img{
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
     margin-bottom: 15px;
 }
-#items{
+.items{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
-#items .item{
+.items .item{
     background-color: white;
-    width: 16%;
-    margin: 4%;
+    width: 45%;
+    margin-top: 10vw;
 }
 #support .title{
     position: relative;
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+    margin-top: 10vw;
+    width: 100%;
+    height: 360vw;
 }
 #support .abs-obj{
     position: absolute;
     z-index: 2;
+    top: 470vw;
+    width: 100vw;
 }
+
 #support h1{
     text-align: center;
 }
 #experience{
-    margin-top: 400px;
+    margin-top: 350px;
     padding-top: 250px;
     position: relative;
     color: white;
@@ -223,11 +228,12 @@
     margin-bottom: 15%;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 #tables .title{
     width: 70%;
     height: 30%;
+    margin: 20px 0;
 }
 #tables .body{
     height: 70%;
@@ -239,19 +245,27 @@
 }
 #tables .body .table{
     display: block;
-    width: 44%;
-    padding: 10px;
-    padding-top: 5px;
+    width: 70%;
+    height: auto;
     padding-bottom: 5px;
     border-left: 3px solid red;
-    margin-bottom: 5px;
-    font-size: 0.9vw;
+    margin-bottom: 50px;
+    font-size: 9vw;
+}
+#tables .body .table text{
+    display: block;
+    margin-left: 10px;
+}
+.table a{
+    color: red;
 }
 #experience img{
     position: absolute;
-    left: 0; bottom: -60;
-    width: 30%;
+    left: 0; bottom: -260px;
+    width: 80%;
+    z-index: 3;
 }
+
 #bords{
     margin: 0 auto;
     display: flex;
@@ -263,7 +277,7 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 24%;
+    width: 100%;
     margin: 2px;
     border-radius: 2%;
     padding: 20px;
@@ -279,14 +293,23 @@
     z-index: 1;
 }
 .bord img{
-    width: 40%;
+    width: 25%;
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 0;
 }
+
 #developers .title{
-    width: 70%;
+    width: 80%;
+    margin-top: 50px;
+}
+#developers .items{
+    flex-direction: column;
+    align-items: center;
+}
+#developers .items .item{
+    align-items: center;
 }
 .person img{
     width: 100%;
@@ -300,8 +323,11 @@
 }
 #persons .person{
     background-color: white;
-    width: 20%;
-    margin: 6%;
+    width: 40%;
+    margin: 5%;
+}
+#team{
+    margin-top: 50px;
 }
 #team .title{
     margin: 0 auto;
@@ -320,6 +346,10 @@
     color: black;
 }
 
+
+#cases{
+    margin-top: 50px;
+}
 #cases .title{
     margin: 0 auto;
     margin-bottom: 50px;
@@ -332,7 +362,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    height: 50%;
+    height: auto;
 }
 #cases img{
     width: 100%;
@@ -342,24 +372,24 @@
     height: 100%;
 }
 .case-1 img{
-    height: 50%;
+    height: 100%;
 }
 .case-1, .case-3, .case-2{
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 10px;
 }
 .case-1 text, .case-3 text, .case-2 text{
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 .case-1, .case-3{
-    width: 30%;
+    width: 100%;
 }
 .case-2{
-    width: 60%;
+    width: 100%;
     position: relative;
 }
 .case-3{
@@ -372,7 +402,7 @@
 }
 .case-2 text{
     bottom: 50px;
-    width: 40%;
+    width: 80%;
 }
 .case-3 text{
     bottom: 20px;
@@ -388,6 +418,8 @@
     color: dodgerblue;
 }
 
+
+
 #reviews .main .title{
     margin: 0 auto;
     margin-bottom: 50px;
@@ -397,18 +429,20 @@
 }
 #reviews .body{
     display: flex;
-    width: 75%;
+    flex-direction: column;
+    width: 100%;
     box-shadow: 0 0 10px 1px gray;
     margin: 0 auto;
-    padding: 50px;
+    padding: 10px;
     padding-right: 0px;
 }
 #reviews .body .number{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 33%;
-    border-left: solid gray 2px;
+    width: 100%;
+    padding: 30px 0;
+    border-top: solid gray 2px;
 }
 #reviews .body .number div{
     display: flex;
@@ -422,16 +456,481 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 67%;
-    margin: 0 50px;
+    width: auto;
+    margin: 0 20px;
 }
 .review img, .review text{
     display: block;
     margin: 20px 0;
 }
 .review img{
-    width: 10%;
+    width: 30%;
 }
 .review .message{
     font-weight: 600;
+}
+
+@media screen and (min-width: 800px) {
+    #header{
+        height: 7vh;
+    }
+    #div1 {
+        min-width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        background-color: rgba(0 0 0 / 0.75);
+    }
+    #video {
+    
+    
+        width: 100%;
+    
+    
+        min-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -100;
+    }
+    #image {
+        width: 80%;
+        margin-left: 0vh;
+        padding-left: 0%;
+    }
+    #image-div {
+        margin-left: 0vh;
+        padding-left: 0%;
+    }
+    #image-cup {
+        position: absolute;
+        top: -3vh;
+        left: 3vw;
+    }
+    
+    .margin-top {
+        margin-top: 7vh;
+    }
+    
+    .text-1 {
+        color: white;
+        font-size: 3.2vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:700;
+        text-align: left;
+        line-height: 1.2;
+    }
+    
+    .text-2 {
+        color:#d1cbcb;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:500;
+        text-align: left;
+        line-height: 1.4;
+    }
+    
+    .text-3 {
+        color:#d1cbcb;
+        font-size: 0.7vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:500;
+        line-height: 1.2;
+        text-align: left;
+        width: 80%;
+        margin-left: 1vw;
+        max-width: 9vw;
+        /* margin: 0px 100px 0px 1vw; */
+    }
+    
+    .text-4 {
+        color:#d1cbcb;
+        font-size: 0.7vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:500;
+        text-align: left;
+        line-height: 1.4;
+    }
+    
+    .text-5 {
+        color:#d1cbcb;
+        font-size: 1.5vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:700;
+        line-height: 1.4;
+        text-align: left;
+        width: 80%;
+        margin: 0px 1vw;
+    }
+    
+    .button-1 {
+        background: none;
+        height: 65px;
+        width: 225px;
+        text-align: center;
+        margin-top: 40px;
+        
+    
+        color:#d1cbcb;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:400;
+        line-height: 1.4;
+    
+        border-radius: 5px;
+        border-style:solid;
+        border-color: #f14d34;
+    }
+    
+    #div2 {
+        text-align: left;
+    }
+    
+    .row-1 {
+        margin-top: 5vh;
+    }
+    
+    .stripe {
+        height: 100%;
+        width: 3px;
+        background: #f14d34;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    #Tariffs {
+        height: 100vh;
+        background-color: aquamarine;
+    }
+
+
+
+    .topic div, .topic h1, .topic h2, .topic h3, .topic text {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        line-height: 1.2;
+    }
+    .topic h1{
+        color: black;
+        font-size: 2vw;
+        font-weight:700;
+    }
+    .topic h3{
+        font-size: 1.2vw;
+        font-weight: 70;
+    }
+    .topic h2{
+        font-size: 1.2vw;
+        font-weight: 700;
+    }
+    .topic text{
+        font-size: 0.9vw;
+        font-weight: 70;
+    }
+    .main{
+        width: 75vw; height: auto;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    #competency .main{
+        width: 75%; height: auto;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    #competency .main .title{
+        margin-left: 10px;
+        width: 50%;
+    }
+    .item{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+    }
+    .item img{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .items{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .items .item{
+        background-color: white;
+        width: 16%;
+        margin: 4%;
+    }
+    #support{
+        position: relative;
+        margin-bottom: 40vw;
+    }
+    #support .main{
+        padding: 0;
+    }
+    #support .title{
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
+    #support .abs-obj{
+        position: absolute;
+        z-index: 2;
+        width: 100vw;
+        top: 10vw;
+        margin: 0;
+    }
+    #support h1{
+        text-align: center;
+    }
+    #experience{
+        padding-top: 50px;
+        margin-top: 40vw;
+        position: relative;
+        color: white;
+        background-color: black;
+    }
+    #experience h1, #experience text{
+        color: white;
+    }
+    #tables{
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 15%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    #tables .title{
+        width: 70%;
+    }
+    #tables .body{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #tables .body .table{
+        display: block;
+        width: 44%;
+        height: 50%;
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-left: 3px solid red;
+        margin-bottom: 5px;
+        font-size: 0.9%;
+        font-weight: 5%;
+    }
+    .table a{
+        color: red;
+    }
+    #experience img{
+        position: absolute;
+        left: 0; bottom: -60px;
+        width: 30%;
+        z-index: 3;
+    }
+    #bords{
+        width: 75vw;
+        height: 20vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bord{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 24%;
+        height: 100%;
+        margin: 2px;
+        margin-bottom: 10px;
+        border-radius: 2%;
+        padding: 20px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+    .bord .num text{
+        font-size: 0.8vw;
+        font-weight: 100;
+    }
+    .bord div{
+        margin: 10px 1px;
+        z-index: 1;
+    }
+    .bord img{
+        width: 40%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+    
+    #developers .title{
+        width: 70%;
+    }
+    #developers .items{
+        flex-direction: row;
+    }
+    .person img{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #persons{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    #persons .person{
+        background-color: white;
+        width: 20%;
+        margin: 6%;
+    }
+    #team{
+        margin-top: 0;
+    }
+    #team .title{
+        margin: 0 auto;
+    }
+    #team .title h1{
+        text-align: center;
+    }
+    #team-button{
+        text-align: center;
+    }
+    #team a{
+        border: solid gray 1px;
+        border-radius: 3px;
+        padding: 10px;
+        margin: 0 auto;
+        color: black;
+    }
+    
+    
+    #cases .title{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    #cases h1{
+        text-align: center;
+    }
+    #cases .body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 50%;
+    }
+    #cases img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .case-2 img, .case-3 img{
+        height: 100%;
+    }
+    .case-1 img{
+        height: 50%;
+    }
+    .case-1, .case-3, .case-2{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .case-1 text, .case-3 text, .case-2 text{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .case-1, .case-3{
+        width: 30%;
+    }
+    .case-2{
+        width: 60%;
+        position: relative;
+    }
+    .case-3{
+        position: relative;
+    }
+    .case-2 text, .case-3 text{
+        position: absolute;
+        color:white;
+        text-shadow: 0 0 5px black;
+    }
+    .case-2 text{
+        bottom: 50px;
+        width: 40%;
+    }
+    .case-3 text{
+        bottom: 20px;
+        width: 70%;
+    }
+    .case-1 text.last{
+        margin-bottom: 50px;
+    }
+    #cases strong{
+        font-weight: 600;
+    }
+    #cases a{
+        color: dodgerblue;
+    }
+    
+    
+    
+    #reviews .main .title{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    #reviews .main .title h1{
+        text-align: center;
+    }
+    #reviews .body{
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        box-shadow: 0 0 10px 1px gray;
+        margin: 0 auto;
+        padding: 50px;
+        padding-right: 0px;
+    }
+    #reviews .body .number{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 33%;
+        border-left: solid gray 2px;
+        border-top: none;
+    }
+    #reviews .body .number div{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    #reviews .body .number text{
+        text-align: center;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 67%;
+        margin: 0 50px;
+    }
+    .review img, .review text{
+        display: block;
+        margin: 20px 0;
+    }
+    .review img{
+        width: 10%;
+    }
+    .review .message{
+        font-weight: 600;
+    }
 }
