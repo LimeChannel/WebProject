@@ -77,14 +77,19 @@
 	/* margin: 0px 100px 0px 1vw; */
 }
 
-.text-4 {
+.text-4 ,A, A:active, A:visited, A:link{
 	color:#d1cbcb;
+    /* color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important; */
 	font-size: 0.7vw;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:500;
 	text-align: left;
 	line-height: 1.4;
 }
+
+/* .ref {
+    text-decoration: none!important;
+} */
 
 .text-5 {
 	color:#d1cbcb;
