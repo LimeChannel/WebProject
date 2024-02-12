@@ -79,7 +79,6 @@
 
 .text-4 ,A, A:active, A:visited, A:link{
 	color:#d1cbcb;
-    /* color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important; */
 	font-size: 0.7vw;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:500;
@@ -87,9 +86,65 @@
 	line-height: 1.4;
 }
 
-/* .ref {
-    text-decoration: none!important;
-} */
+.checkmark{
+    height: 15px; 
+    width: 15px; 
+    margin-top: -5px;
+}
+
+.tariffs-bg{
+    right: 0;
+    opacity: 0.2;
+    height: 1570px;
+}
+.tariffs-bg-img{
+    weight: 100%;
+}
+.tariffs-title{
+    padding-top: 18%;
+}
+.tariffs-start{
+    margin-bottom: 8%;
+}
+.tariffs-vip{
+    margin-bottom: 4%;
+}
+.tariffs-bus{
+    margin-bottom: 2%;
+}
+.tariffs-el-title{
+    color: #f14d34;
+    font-size: 20px;
+    font-weight: 600;
+}
+.bus-tariffs-btn{
+    background-color: #f14d34;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+.tariffs-btn{
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+    border: 1px solid #f14d34;
+    border-radius: 6px;
+}
+.tariffs-btn-cont{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #f14d34;
+}
+.tariffs-bottom-link-fs{
+    font-size: 13px;
+    font-weight: 500;
+}
 
 .text-5 {
 	color:#d1cbcb;
