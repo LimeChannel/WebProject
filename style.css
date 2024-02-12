@@ -9,33 +9,33 @@
 #header{
 	height: 7vh;
 }
-
 #div1 {
 	min-width: 100%;
 	height: 60vh;
 	overflow: hidden;
 	background-color: rgba(0 0 0 / 0.75);
 }
-
 #video {
+
+
+    width: 100%;
+
+
 	min-width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -100;
 }
-
 #image {
 	width: 80%;
 	margin-left: 0vh;
 	padding-left: 0%;
 }
-
 #image-div {
 	margin-left: 0vh;
 	padding-left: 0%;
 }
-
 #image-cup {
 	position: absolute;
 	top: -3vh;
@@ -138,6 +138,11 @@
 	background-color: aquamarine;
 }
 
+
+
+
+
+
 .topic div, .topic h1, .topic h2, .topic h3, .topic text {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
@@ -156,7 +161,7 @@
     font-size: 4vw;
     font-weight: 700;
 }
-.topic text{
+.topic .text-line{
     font-size: 4vw;
     font-weight: 70;
 }
@@ -226,6 +231,7 @@
     margin-left: auto;
     margin-right: 0;
     margin-bottom: 15%;
+    margin-top: 40vw;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -248,11 +254,13 @@
     width: 70%;
     height: auto;
     padding-bottom: 5px;
+    padding-left: 3vw;
     border-left: 3px solid red;
     margin-bottom: 50px;
-    font-size: 9vw;
+    font-size: 5vw;
+    color: white;
 }
-#tables .body .table text{
+#tables .body .table .text-line{
     display: block;
     margin-left: 10px;
 }
@@ -284,7 +292,7 @@
     padding-bottom: 40px;
     position: relative;
 }
-.bord .num text{
+.bord .num .text-line{
     font-size: 0.8vw;
     font-weight: 100;
 }
@@ -381,7 +389,7 @@
     justify-content: space-between;
     margin: 10px;
 }
-.case-1 text, .case-3 text, .case-2 text{
+.case-1 .text-line, .case-3 .text-line, .case-2 .text-line{
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -395,20 +403,20 @@
 .case-3{
     position: relative;
 }
-.case-2 text, .case-3 text{
+.case-2 .text-line, .case-3 .text-line{
     position: absolute;
     color:white;
     text-shadow: 0 0 5px black;
 }
-.case-2 text{
+.case-2 .text-line{
     bottom: 50px;
     width: 80%;
 }
-.case-3 text{
+.case-3 .text-line{
     bottom: 20px;
     width: 70%;
 }
-.case-1 text.last{
+.case-1 .last{
     margin-bottom: 50px;
 }
 #cases strong{
@@ -449,7 +457,7 @@
     justify-content: space-around;
     width: 100%;
 }
-#reviews .body .number text{
+#reviews .body .number .text-line{
     text-align: center;
 }
 .review{
@@ -459,7 +467,7 @@
     width: auto;
     margin: 0 20px;
 }
-.review img, .review text{
+.review img, .review .text-line{
     display: block;
     margin: 20px 0;
 }
@@ -469,6 +477,10 @@
 .review .message{
     font-weight: 600;
 }
+
+
+
+
 
 @media screen and (min-width: 800px) {
     #header{
@@ -605,7 +617,7 @@
 
 
 
-    .topic div, .topic h1, .topic h2, .topic h3, .topic text {
+    .topic div, .topic h1, .topic h2, .topic h3, .topic .text-line {
         font-family: 'Montserrat', sans-serif;
         text-align: left;
         line-height: 1.2;
@@ -623,7 +635,7 @@
         font-size: 1.2vw;
         font-weight: 700;
     }
-    .topic text{
+    .topic .text-line{
         font-size: 0.9vw;
         font-weight: 70;
     }
@@ -691,13 +703,14 @@
         color: white;
         background-color: black;
     }
-    #experience h1, #experience text{
+    #experience h1, #experience .text-line{
         color: white;
     }
     #tables{
         margin-left: auto;
         margin-right: 0;
         margin-bottom: 15%;
+        margin-top: 10vw;
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -722,8 +735,9 @@
         padding-bottom: 5px;
         border-left: 3px solid red;
         margin-bottom: 5px;
-        font-size: 0.9%;
-        font-weight: 5%;
+        color: white;
+        font-size: 60%;
+        font-weight: 50%;
     }
     .table a{
         color: red;
@@ -756,7 +770,7 @@
         padding-bottom: 40px;
         position: relative;
     }
-    .bord .num text{
+    .bord .num .text-line{
         font-size: 0.8vw;
         font-weight: 100;
     }
@@ -845,7 +859,7 @@
         justify-content: space-between;
         margin: 10px;
     }
-    .case-1 text, .case-3 text, .case-2 text{
+    .case-1 .text-line, .case-3 .text-line, .case-2 .text-line{
         margin-left: 20px;
         margin-top: 10px;
     }
@@ -859,20 +873,20 @@
     .case-3{
         position: relative;
     }
-    .case-2 text, .case-3 text{
+    .case-2 .text-line, .case-3 .text-line{
         position: absolute;
         color:white;
         text-shadow: 0 0 5px black;
     }
-    .case-2 text{
+    .case-2 .text-line{
         bottom: 50px;
         width: 40%;
     }
-    .case-3 text{
+    .case-3 .text-line{
         bottom: 20px;
         width: 70%;
     }
-    .case-1 text.last{
+    .case-1 .last{
         margin-bottom: 50px;
     }
     #cases strong{
@@ -913,7 +927,7 @@
         justify-content: space-around;
         width: 100%;
     }
-    #reviews .body .number text{
+    #reviews .body .number .text-line{
         text-align: center;
     }
     .review{
@@ -921,9 +935,9 @@
         flex-direction: column;
         justify-content: space-between;
         width: 67%;
-        margin: 0 50px;
+        margin: 0 5%;
     }
-    .review img, .review text{
+    .review img, .review .text-line{
         display: block;
         margin: 20px 0;
     }
